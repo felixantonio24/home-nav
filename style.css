@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    height: 100bh;
+    background-color: #000;
+    background-image: url(https://www.peruforless.com/blog/wp-content/uploads/2022/10/top-picture-2.jpg);
+   background-size: cover;
+   
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #1c0b0b;
+    font-size: 1rem;
+}
+a:hover{
+    color: orange;
+}
+
+/*Header*/
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+/*nav-br*/
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 120px;
+    margin: 0;
+    display:flex;
+    justify-content: space-between;
+}
