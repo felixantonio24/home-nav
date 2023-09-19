@@ -9,11 +9,12 @@ body{
     background-color: #000;
     background-image: url('https://www.peruforless.com/blog/wp-content/uploads/2022/10/top-picture-2.jpg');
    background-size: cover;
-   background-position: center;
+   
    
 }
 li{
     list-style: none;
+
 }
 a{
     text-decoration: none;
@@ -21,7 +22,7 @@ a{
     font-size: 1rem;
 }
 a:hover{
-    color: orange;
+    color: rgba(247, 16, 16, 0.829);
 }
 
 /*Header*/
@@ -52,4 +53,71 @@ header{
     color: #332f2f;
     font-size: 1.rem;
     cursor: pointer;
+    display: none;
+    }
+    .action_btn{
+        background-color: orange;
+        color: #000000;
+        padding: 0.5rem 1rem;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        cursor: pointer;
+        
+    }
+    
+    .action_btn:hover{
+        scale: 1.05;
+        color: #fff;
+        transition: scale 0.2 ease;
+    }
+    
+    .action_btn:active{
+        scale: 0.95;
+    }
+
+    /*DROPDOWN MENU */
+    .dropdown_menu{
+        position: absolute;
+        right: 2rem;
+        height: 0;
+        top:60px;
+        width: 300px;
+        background: rgba(255, 255, 255, 0.292);
+        backdrop-filter: blur(15px);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .dropdown_menu .open{
+        height: 240px;
+    }
+
+    .dropdown_menu li {
+        padding: 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .dropdown_menu .action_btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Resposive */
+    @media(max-width:992px){
+        .navbar .links,
+        .navbar .action_btn{
+            display: none;
+        }
+    }
+
+    .navbar .toggle_tbn{
+        display: block;
+    }
+    .dropdown_menu{
+        display: block;
     }
