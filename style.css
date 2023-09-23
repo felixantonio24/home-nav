@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
 }
 body{
     height: 100bh;
@@ -12,9 +13,17 @@ body{
    
    
 }
+header{
+    font-size: 50px;
+    font-weight:  900;
+}
 li{
     list-style: none;
 
+}
+.logo{
+    margin-top: 17px;
+    color: #a7a2a2 !important;
 }
 a{
     text-decoration: none;
@@ -46,19 +55,20 @@ header{
 .navbar .links{
     display: flex;
     gap: 2rem;
+    margin-top: 25px;
    
 }  
 
 .navbar .toggle_tbn{
     color: #332f2f;
-    font-size: 1.rem;
+    font-size: 1rem;
     cursor: pointer;
     display: none;
     }
     .action_btn{
         background-color: orange;
         color: #000000;
-        padding: 0.5rem 1rem;
+        padding: 1rem;
         border: none;
         outline: none;
         border-radius: 20px;
